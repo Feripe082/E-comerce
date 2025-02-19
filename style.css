@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(73, 0, 0);
+    color: aliceblue;
+    background-image: url(./assets/background.png);
+    background-position: center;
+    background-attachment: fixed;  /* Faz o fundo ficar fixo e acompanhar o scroll */
+    background-repeat: no-repeat;
+}
+
+main{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+header{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,480px);
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+    align-items: center;
+    text-align: center;
+    margin-left: 400px;
+    margin-top: 10px;
+    justify-content: center; 
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue;
+    font-family: 'Times New Roman';
+}
+
+nav a{
+    font-size: 40px;
+    margin-top: 90px;
+    display: flex;
+    background-color: black;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+input{
+    background-color: #000;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+}
+
+.statusCliente{
+    margin-left: 180px;
+    display: grid;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: repeat(2,100px); 
+}
+
+.logo a{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.log_cad{
+    margin-left:350%;
+    margin-top: -15%;
+    display: flex;
+    gap: 10px;
+}
+
+.log_cad_index{
+    margin-left:250%;
+    margin-top: -15%;
+    display: flex;
+    gap: 10px;
+}
+
+.admin{
+    margin-left:260%;
+    margin-top: -10%;
+}
+
+.admin_index{
+    margin-left: 360%;
+    margin-top: -10%;
+}
+
+.carrinho{
+    margin-left:220%;
+    margin-top: -22%;
+    display: grid;
+    grid-template-columns: repeat(20,1000px);
+}
+
+.dado, .miniatura, .livro{
+    display:inline-block;
+    gap: 10px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.login{
+    margin-top: 150px;
+    font-size: 30px;
+}
+.login input{
+    width: 600px;
+    height: 30px;
+}
+
+.grid_conteudo{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont{
+    text-align: center;
+    justify-content: center;
+}
+
+.mid{
+    display:grid;
+    margin-left:120px ;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    position: relative;
+    background-color: rgba(32, 32, 32, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(32, 32, 32, 0.9);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.brilhante{
+    text-decoration: none;
+    padding: 10px;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brilhante:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, 
+    #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.brilhante:active{
+    color: #000
+}
+
+.brilhante:active::after{
+    background: transparent;
+}
+
+.brilhante:hover::before{
+    opacity: 1;
+}
+
+.brilhante:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
