@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="atualizarItemPedido.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Cadastros</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="">
+            <a href="../index.html"><strong>Dungeon and Dados </strong></a>
+        </div>
+
+        <h1>Cadastro Item Pedido</h1>
+        <div class="log_cad">
+            <a href="cadastros.html">Cadastrar </a>
+            <p><strong> / </strong></p>
+            <a href="../login/login.html">Logar </a>
+        </div>
+        <div class="admin">
+            <a href="../admin.html">Admin</a>
+        </div>
+   
+       
+    </header>
+    <main>
+        <div class="grid_conteudo">
+
+            <div class="cont">
+                <label for="codItemPedido">Id do item do pedido: </label><br>
+                <input type="text" name="codItemPedido" id="codItemPedido"><br><br>
+            </div>
+
+            <div class="cont">
+                <label for="pedidoId">Id do pedido: </label><br>
+                <input type="text" name="pedidoId" id="pedidoId"><br><br>
+            </div>
+    
+            <div class="cont">
+                <label for="produtoId">Id do produto: </label><br>
+                <input type="text" name="produtoId" id="produtoId"><br><br>
+            </div>
+    
+            <div class="cont">
+                <label for="quantidadeProduto">Quantidade do produto: </label><br>
+                <input type="text" name="quantidadeProduto" id="quantidadeProduto"><br><br>
+            </div>
+
+            <div class="mid">
+                <label for="precoProduto">Preço do produto: </label><br>
+                <input type="text" name="precoProduto" id="precoProduto"><br><br>
+            </div>
+    
+        </div>
+        <center>
+        <button id="atualizar" class="brilhante">Atualizar</button>
+        <div id="res"></div>
+    </center>
+
+
+</main>
+</body>
+</html>

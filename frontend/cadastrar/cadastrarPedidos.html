@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cadastrarPedidos.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Cadastros</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="">
+            <a href="../index.html"><strong>Dungeon and Dados </strong></a>
+        </div>
+
+        <h1>Cadastro Pedido</h1>
+        <div class="log_cad">
+            <a href="cadastros.html">Cadastrar </a>
+            <p><strong> / </strong></p>
+            <a href="../login/login.html">Logar </a>
+        </div>
+        <div class="admin">
+            <a href="../admin.html">Admin</a>
+        </div>
+   
+       
+    </header>
+    <main>
+        <div class="grid_conteudo">
+
+            <div class="cont">
+                <label for="clienteId">Id do cliente: </label><br>
+                <input type="text" name="clienteId" id="clienteId"><br><br>
+            </div>
+    
+            <div class="cont">
+                <label for="dataPedido">Data do vencimento: </label><br>
+                <input type="date" name="dataPedido" id="dataPedido"><br><br>
+            </div>
+    
+            <div class="mid">
+                <label for="valorPedido">Valor do pedido: </label><br>
+                <input type="text" name="valorPedido" id="valorPedido"><br><br>
+            </div>
+    
+        </div>
+        <center>
+        <button id="cadastrar" class="brilhante">Cadastrar</button>
+        <div id="res"></div>
+    </center>
+
+
+</main>
+</body>
+</html>

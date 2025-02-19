@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="atualizarReabastecimento.js" defer></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Cadastros</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="">
+            <a href="../index.html"><strong>Dungeon and Dados </strong></a>
+        </div>
+
+        <h1>Atualizar Reabastecimento</h1>
+        <div class="log_cad">
+            <a href="cadastros.html">Cadastrar </a>
+            <p><strong> / </strong></p>
+            <a href="../login/login.html">Logar </a>
+        </div>
+        <div class="admin">
+            <a href="../admin.html">Admin</a>
+        </div>
+   
+       
+    </header>
+    <main>
+        <div class="grid_conteudo">
+
+            <div class="cont">
+                <label for="codReabastecimento">Id do reabastecimento: </label><br>
+                <input type="text" name="codReabastecimento" id="codReabastecimento"><br><br>
+            </div>
+
+            <div class="cont">
+                <label for="estoqueId">Id do estoque: </label><br>
+                <input type="text" name="estoqueId" id="estoqueId"><br><br>
+            </div>
+    
+            <div class="cont">
+                <label for="nomeProduto">Nome do produto: </label><br>
+                <input type="text" name="nomeProduto" id="nomeProduto"><br><br>
+            </div>
+    
+            <div class="cont">
+                <label for="quantidadeEstoque">Quantidade do estoque: </label><br>
+                <input type="text" name="quantidadeEstoque" id="quantidadeEstoque"><br><br>
+            </div>
+
+            <div class="mid">
+                <label for="dataReabastecimento">Data do reabastecimento: </label><br>
+                <input type="date" name="dataReabastecimento" id="dataReabastecimento"><br><br>
+            </div>
+
+        </div>
+        <center>
+        <button id="atualizar" class="brilhante">Atualizar</button>
+        <div id="res"></div>
+    </center>
+
+
+
+</main>
+</body>
+</html>
